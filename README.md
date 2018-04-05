@@ -4,10 +4,14 @@ This is the React Boilerplate 9000 from the Future!
 ## Setup
 ```
 npm install
-
 npm run build
-
 npm start
+```
+### Reset
+```
+npm run clean
+npm install
+npm run build
 ```
 
 # Source
