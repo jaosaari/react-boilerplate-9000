@@ -1,0 +1,26 @@
+{
+  "name": "react-boilerplate-9000",
+  "version": "1.0.0",
+  "description": "The react boilerplate of the future",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaosaari/react-boilerplate-9000.git"
+  },
+  "keywords": [
+    "react",
+    "boilerplate"
+  ],
+  "author": "jaosaari",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/jaosaari/react-boilerplate-9000/issues"
+  },
+  "homepage": "https://github.com/jaosaari/react-boilerplate-9000#readme",
+  "dependencies": {
+    "npm": "^5.8.0"
+  }
+}
