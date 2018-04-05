@@ -4,11 +4,13 @@
   "description": "the react boilerplate from the future",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build-server && npm run build-client",
-    "build-server": "babel src/server --out-dir ./dist",
-    "build-client": "babel src/client --copy-files --out-dir ./dist/public",
-    "start": "node ./dist/index.js",
-    "test": "jest ./src"
+    "build": "webpack",
+    "build-babel": "npm run build-babel-server && npm run build-babel-client",
+    "build-babel-server": "babel src/server --out-dir ./dist",
+    "build-babel-client": "babel src/client --copy-files --out-dir ./dist/public",
+    "start": "node ./dist/server.js",
+    "test": "jest ./src",
+    "clean": "rimraf dist node_modules",
   },
   "repository": {
     "type": "git",
@@ -27,12 +29,16 @@
   "dependencies": {
     "express": "^4.16.3",
     "react": "^16.3.1",
-    "react-dom": "^16.3.1"
+    "react-dom": "^16.3.1",
+    "rimraf": "^2.6.2",
+    "webpack": "^4.5.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
-    "jest": "^22.4.3"
+    "jest": "^22.4.3",
+    "webpack-node-externals": "^1.7.2"
   }
 }
